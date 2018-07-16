@@ -24,6 +24,8 @@ docker pull maxmilton/net-tools
 
 ### Shell aliases
 
+> _TIP: Change `local/net-tools` to `maxmilton/net-tools` if you use the prebuilt image._
+
 For [fish shell](https://fishshell.com) run these commands or add them to a one-time config file:
 
 ```sh
