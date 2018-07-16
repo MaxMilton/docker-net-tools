@@ -46,4 +46,5 @@ RUN set -xe \
     whois \
     whois-doc
 
+WORKDIR /data
 CMD ["/bin/bash"]
