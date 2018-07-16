@@ -8,6 +8,22 @@ A collection of Linux network tools in a docker container. No mater what host sy
 
 ## Setup
 
+### Install
+
+Build locally (better if you want to customise the image but remember to rebuild periodically for updates):
+
+```sh
+docker build --no-cache -t local/net-tools .
+```
+
+Or use a prebuilt image:
+
+```sh
+docker pull maxmilton/net-tools
+```
+
+### Shell aliases
+
 For [fish shell](https://fishshell.com) run these commands or add them to a one-time config file:
 
 ```sh
@@ -26,6 +42,26 @@ abbr --add sftp 'docker run -ti --rm --network=host --volume="$PWD":/data local/
 abbr --add scp 'docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools scp'
 abbr --add tcpdump 'docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools tcpdump'
 abbr --add whois 'docker run -ti --rm local/net-tools whois'
+```
+
+Bash/ZSH shell version; put this in your `.bashrc` or `.zshrc`:
+
+```sh
+alias nt='docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools'
+alias curl='docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools curl'
+alias drill='docker run -ti --rm local/net-tools drill'
+alias htop='docker run -ti --rm --pid=host local/net-tools htop'
+alias iperf='docker run -ti --rm --network=host local/net-tools iperf'
+alias jq='docker run -ti --rm --volume="$PWD":/data local/net-tools jq'
+alias mtr='docker run -ti --rm local/net-tools mtr'
+alias nmap='docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools nmap'
+alias ncat='docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools ncat'
+alias nping='docker run -ti --rm --network=host local/net-tools nping'
+alias ssh='docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools ssh'
+alias sftp='docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools sftp'
+alias scp='docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools scp'
+alias tcpdump='docker run -ti --rm --network=host --volume="$PWD":/data local/net-tools tcpdump'
+alias whois='docker run -ti --rm local/net-tools whois'
 ```
 
 ## Licence

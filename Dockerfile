@@ -1,9 +1,6 @@
 # Run net tools in a container
 #
-# Build image:
-#   docker build -t local/net-tools .
-#
-# Update:
+# Build or update image:
 #   docker build --no-cache -t local/net-tools .
 #
 
