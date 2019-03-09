@@ -1,4 +1,6 @@
-<!-- markdownlint-disable first-line-h1 ol-prefix -->
+**DEPRECATED: Use the image from my `dockerfiles` repo instead: <https://github.com/MaxMilton/dockerfiles/tree/master/net-tools>**
+
+---
 
 [![Build Status](https://travis-ci.com/MaxMilton/docker-net-tools.svg?branch=master)](https://travis-ci.com/MaxMilton/docker-net-tools) [![Image version](https://images.microbadger.com/badges/version/maxmilton/net-tools.svg)](https://microbadger.com/images/maxmilton/net-tools) [![Image layers](https://images.microbadger.com/badges/image/maxmilton/net-tools.svg)](https://microbadger.com/images/maxmilton/net-tools)
 
